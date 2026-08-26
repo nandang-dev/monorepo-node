@@ -4,9 +4,9 @@
   "description": "{{ package_description }}",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "vite preview --port {{ port_number }}",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
+    "start": "node init && vite preview --port {{ port_number }}",
     "typegen": "tsr generate",
     "lint": "oxlint --fix .",
     "check": "oxlint --fix . && oxfmt .",

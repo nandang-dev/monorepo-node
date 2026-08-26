@@ -3,9 +3,9 @@
   "private": true,
   "description": "{{ package_description }}",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "oxlint --fix .",
     "check": "oxfmt .",
     "cleanup": "pnpm dlx del-cli node_modules .{cache,data,next,tmp} dist tests-results",
